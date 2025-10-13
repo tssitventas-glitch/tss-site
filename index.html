@@ -3,28 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
 
-  <title>Tech Surgical Solution (TSS) · Consultora IT en CABA y GBA — Diseño Web, Desarrollo de Software y Ciberseguridad</title>
-  <meta name="description" content="Tech Surgical Solution (TSS): consultora IT en CABA y GBA. Diseño web, desarrollo de software a medida, automatización de procesos y ciberseguridad para pymes y organizaciones. Atención rápida y resultados medibles.">
-  <meta name="robots" content="index,follow">
+  <title>Tech Surgical Solution (TSS) · Consultora IT en CABA y GBA | Diseño Web, Software y Ciberseguridad</title>
+  <meta name="description" content="Tech Surgical Solution (TSS) es una consultora IT en CABA y GBA especializada en diseño web, desarrollo de software, automatización y ciberseguridad. Transformamos procesos empresariales con tecnología moderna y resultados medibles.">
+  <meta name="keywords" content="consultora IT, diseño web, desarrollo de software, automatización, ciberseguridad, Buenos Aires, CABA, GBA, aplicaciones empresariales, sistemas informáticos, Tech Surgical Solution, TSS">
   <link rel="canonical" href="https://www.tss-tech.it.com/">
 
-  <!-- SEO extra -->
-  <meta name="keywords" content="consultora IT, diseño web, desarrollo de software, automatización, ciberseguridad, consultoría informática, páginas web, aplicaciones empresariales, CABA, Buenos Aires, Argentina, TSS, Tech Surgical Solution">
-
-  <!-- Open Graph / Social -->
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Tech Surgical Solution (TSS) · Consultora IT — Diseño Web, Software y Ciberseguridad">
-  <meta property="og:description" content="Consultora IT en CABA y GBA: diseño web, desarrollo de software, automatización y ciberseguridad para pymes.">
+  <meta property="og:title" content="Tech Surgical Solution (TSS) · Consultora IT en CABA y GBA">
+  <meta property="og:description" content="Consultora IT especializada en diseño web, desarrollo de software, automatización y ciberseguridad para pymes y empresas argentinas.">
   <meta property="og:url" content="https://www.tss-tech.it.com/">
   <meta property="og:site_name" content="Tech Surgical Solution (TSS)">
   <meta property="og:locale" content="es_AR">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Favicon mínimo (SVG inline) -->
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+  <!-- Favicon inline -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23ffd400'/><text x='32' y='42' font-size='28' font-family='Arial' text-anchor='middle' fill='%23000'>T</text></svg>">
 
-  <!-- JSON-LD Organización -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,7 +46,7 @@
     "contactPoint": [{
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "email": "contact@tss-tech.it.com",
+      "email": "tss.it.ventas@gmail.com",
       "areaServed": "AR"
     }]
   }
@@ -52,95 +54,103 @@
 
   <style>
     :root{
-      --bg:#0a0a0a;--bg-2:#151515;--text:#f2f2f2;--muted:#c9c9c9;--yellow:#ffd400;--yellow-600:#e2bd00;--black:#000;--radius:14px;--shadow:0 8px 28px rgba(0,0,0,.4);
+      --bg:#0a0a0a;--bg-2:#151515;--text:#f2f2f2;--muted:#c9c9c9;
+      --yellow:#ffd400;--yellow-600:#e2bd00;--radius:14px;
+      --shadow:0 8px 28px rgba(0,0,0,.4);
     }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Arial;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",Roboto,Arial,sans-serif;scroll-behavior:smooth}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
+    header{position:sticky;top:0;background:rgba(10,10,10,.85);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
     .container{width:min(1120px,92vw);margin:auto}
-    header{position:sticky;top:0;backdrop-filter:saturate(120%) blur(6px);background:color-mix(in srgb,var(--bg)80%,transparent);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:.7rem}
-    .brand svg{width:34px;height:34px}
-    nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.15rem;border-radius:999px;font-weight:700;background:var(--yellow);color:#111;box-shadow:var(--shadow)}
-    .btn:hover{background:var(--yellow-600)}
+    .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;letter-spacing:.5px}
+    nav ul{display:flex;gap:1.2rem;list-style:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:.9rem 1.15rem;border-radius:999px;font-weight:700;background:var(--yellow);color:#111;box-shadow:var(--shadow);transition:.25s}
+    .btn:hover{background:var(--yellow-600);transform:translateY(-2px)}
     .btn--ghost{background:transparent;border:1px solid rgba(255,255,255,.18);color:var(--text)}
     .btn--ghost:hover{border-color:var(--yellow);color:var(--yellow)}
     .hero{padding:72px 0 56px;background:radial-gradient(1300px 600px at 70% -10%,rgba(255,212,0,.12),transparent 60%)}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-    .headline{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:0 0 16px;font-weight:800}
-    .sub{color:var(--muted);margin:0 0 28px}
+    .hero-grid{display:grid;grid-template-columns:1fr .9fr;gap:40px;align-items:center}
+    .headline{font-size:clamp(28px,4vw,46px);line-height:1.15;font-weight:800;margin-bottom:16px}
+    .sub{color:var(--muted);margin-bottom:28px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap}
     section{padding:68px 0;border-top:1px solid rgba(255,255,255,.06)}
     section.alt{background:var(--bg-2)}
-    .sec-title{font-size:clamp(22px,2.6vw,32px);margin:0 0 26px;font-weight:800}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    .card{background:linear-gradient(180deg,#0f0f0f,#0b0b0b);border:1px solid rgba(255,255,255,.06);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
-    .card h3{margin:10px 0 6px;font-size:20px}
-    .card p{margin:0;color:var(--muted)}
+    .sec-title{font-size:clamp(22px,2.6vw,32px);margin-bottom:26px;font-weight:800;text-align:center}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .card{background:#101010;border:1px solid rgba(255,255,255,.06);padding:24px;border-radius:var(--radius);box-shadow:var(--shadow);transition:.25s}
+    .card:hover{transform:translateY(-4px);border-color:var(--yellow)}
+    .card h3{margin-bottom:8px;font-size:20px}
+    .card p{color:var(--muted)}
     .case-list{display:grid;gap:18px}
-    .case{background:#0d0d0d;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:18px;display:grid;grid-template-columns:1fr 200px;gap:12px;align-items:center}
+    .case{background:#0d0d0d;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:20px;display:grid;grid-template-columns:1fr 200px;gap:12px;align-items:center}
     .case .meta{text-align:right;color:var(--muted);font-size:14px}
-    footer{background:var(--black);border-top:1px solid rgba(255,255,255,.06)}
+    footer{background:#000;border-top:1px solid rgba(255,255,255,.06)}
     .foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;padding:34px 0}
     .mini{color:var(--muted);font-size:14px}
     .social{display:flex;gap:10px;margin-top:8px}
-    .social a{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,.12)}
-    .legal{border-top:1px solid rgba(255,255,255,.06);padding:12px 0;color:var(--muted);font-size:14px}
-    @media(max-width:980px){.hero-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr;text-align:center}.case{grid-template-columns:1fr;}.case .meta{text-align:left}}
-    /* toast */
+    .social a{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,.12);font-weight:700}
+    .legal{border-top:1px solid rgba(255,255,255,.06);padding:12px 0;text-align:center;color:var(--muted);font-size:14px}
     .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;border:1px solid rgba(255,255,255,.16);padding:.7rem 1rem;border-radius:10px;color:#f2f2f2;opacity:0;pointer-events:none;transition:.3s}
     .toast.show{opacity:1;pointer-events:auto}
+    @media(max-width:980px){
+      .hero-grid{grid-template-columns:1fr;text-align:center}
+      .foot{grid-template-columns:1fr;text-align:center}
+      .case{grid-template-columns:1fr}
+      .case .meta{text-align:left}
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container nav">
       <a class="brand" href="#inicio" aria-label="Inicio Tech Surgical Solution">
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo TSS"><path d="M32 6C18 6 8 16 8 29h48C56 16 46 6 32 6Z" fill="var(--yellow)"/><path d="M32 29v16a6 6 0 0 1-12 0" stroke="var(--yellow)" stroke-width="4" stroke-linecap="round"/></svg>
-        <b>TSS</b>
+        <svg viewBox="0 0 64 64" width="34" height="34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#ffd400"/><text x="32" y="42" font-size="28" font-family="Arial" text-anchor="middle" fill="#000">T</text></svg>
+        <span>TSS</span>
       </a>
-      <nav aria-label="Principal"><ul>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#casos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul></nav>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#casos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main id="inicio">
-    <!-- H1 SEO con palabras clave -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1 class="headline">Consultora IT en CABA y GBA — Diseño Web, Desarrollo de Software y Ciberseguridad | Tech Surgical Solution (TSS)</h1>
-          <p class="sub">Optimizamos tu tecnología con precisión quirúrgica: sitios web rápidos, aplicaciones empresariales, automatización de procesos e infraestructura segura.</p>
+          <h1 class="headline">Consultora IT en CABA y GBA — Diseño Web, Software y Ciberseguridad | Tech Surgical Solution (TSS)</h1>
+          <p class="sub">Impulsamos tu empresa con soluciones digitales precisas: <strong>diseño web moderno</strong>, <strong>aplicaciones empresariales</strong>, <strong>automatización de procesos</strong> y <strong>ciberseguridad</strong>.</p>
           <div class="cta-row">
-            <a class="btn" href="#servicios">Conocé nuestros servicios</a>
+            <a class="btn" href="#servicios">Ver servicios</a>
             <a class="btn btn--ghost" href="#contacto">Contactanos</a>
           </div>
-          <small>Respuesta garantizada en menos de 24 h.</small>
+          <small>Respuesta garantizada en menos de 24 horas.</small>
         </div>
       </div>
     </section>
 
     <section id="servicios" class="alt">
       <div class="container">
-        <h2 class="sec-title">Servicios</h2>
+        <h2 class="sec-title">Nuestros Servicios</h2>
         <div class="cards">
           <div class="card">
             <h3>Diseño Web</h3>
-            <p>Sitios modernos, rápidos y seguros (SEO técnico, performance, accesibilidad). Implementación en hosting estático y dominios propios.</p>
+            <p>Sitios web optimizados para SEO, velocidad y accesibilidad. Hosting propio o externo, dominios personalizados y diseño adaptable.</p>
           </div>
           <div class="card">
-            <h3>Aplicaciones Empresariales</h3>
-            <p>Automatización de procesos, paneles, integraciones, workflows a medida y soporte. Enfoque en pymes de CABA y Gran Buenos Aires.</p>
+            <h3>Desarrollo de Software</h3>
+            <p>Aplicaciones empresariales, paneles de control, integraciones API y automatización de flujos. Desarrollos escalables y seguros.</p>
           </div>
           <div class="card">
             <h3>Ciberseguridad</h3>
-            <p>Hardening, auditorías, pruebas de intrusión y planes de remediación. Cultura de seguridad aplicada al negocio.</p>
+            <p>Auditorías técnicas, hardening de servidores, pruebas de intrusión y capacitación. Seguridad aplicada al negocio.</p>
           </div>
         </div>
       </div>
@@ -148,80 +158,57 @@
 
     <section id="casos">
       <div class="container">
-        <h2 class="sec-title">Proyectos destacados</h2>
+        <h2 class="sec-title">Proyectos Destacados</h2>
         <div class="case-list">
           <div class="case">
             <div>
-              <h3>Plataforma de gestión "Opero"</h3>
-              <p class="mini">ERP modular para pyme de logística — integraciones AFIP, facturación y control de stock.</p>
+              <h3>Opero · ERP logístico</h3>
+              <p class="mini">Integración con AFIP, facturación y control de stock en tiempo real.</p>
             </div>
-            <div class="meta">
-              <div>Reducción de tiempos: <b>32%</b></div>
-              <div>Duración: <b>5 meses</b></div>
-            </div>
+            <div class="meta"><div>Reducción de tiempos <b>32%</b></div><div>Duración <b>5 meses</b></div></div>
           </div>
-
           <div class="case">
             <div>
-              <h3>Portal e-commerce "Mercorium"</h3>
-              <p class="mini">Tienda B2B con catálogo dinámico y pasarela de pago local. UI optimizada para conversiones.</p>
+              <h3>Mercorium · E-commerce B2B</h3>
+              <p class="mini">Catálogo dinámico, pagos locales y diseño UX para conversión.</p>
             </div>
-            <div class="meta">
-              <div>+Ventas: <b>28%</b></div>
-              <div>Duración: <b>3 meses</b></div>
-            </div>
+            <div class="meta"><div>+Ventas <b>28%</b></div><div>Duración <b>3 meses</b></div></div>
           </div>
-
           <div class="case">
             <div>
-              <h3>Sistema IoT "EnviroTrack"</h3>
-              <p class="mini">Monitoreo remoto de sensores, panel de alertas y pipeline de datos para laboratorios.</p>
+              <h3>EnviroTrack · IoT para laboratorios</h3>
+              <p class="mini">Monitoreo remoto, alertas inteligentes y dashboard centralizado.</p>
             </div>
-            <div class="meta">
-              <div>Alertas tempranas: <b>99.7%</b></div>
-              <div>Duración: <b>6 meses</b></div>
-            </div>
+            <div class="meta"><div>Alertas tempranas <b>99.7%</b></div><div>Duración <b>6 meses</b></div></div>
           </div>
-
           <div class="case">
             <div>
-              <h3>Auditoría de seguridad "ShieldCheck"</h3>
-              <p class="mini">Pruebas de intrusión y hardening en infraestructura crítica — informe con remediaciones priorizadas.</p>
+              <h3>ShieldCheck · Auditoría de seguridad</h3>
+              <p class="mini">Pruebas de intrusión, hardening y remediación priorizada.</p>
             </div>
-            <div class="meta">
-              <div>Vulnerabilidades críticas resueltas: <b>14</b></div>
-              <div>Duración: <b>2 semanas</b></div>
-            </div>
+            <div class="meta"><div>Vulnerabilidades resueltas <b>14</b></div><div>Duración <b>2 semanas</b></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Bloque SEO con keywords naturales -->
-    <section class="alt" aria-labelledby="sobre-tss">
+    <section id="sobre" class="alt">
       <div class="container">
-        <h2 id="sobre-tss" class="sec-title">Sobre Tech Surgical Solution (TSS)</h2>
-        <p>Somos una <strong>consultora IT</strong> con base en <strong>CABA y Gran Buenos Aires</strong>, enfocada en <strong>diseño web</strong>, <strong>desarrollo de software a medida</strong>, <strong>automatización de procesos</strong> y <strong>ciberseguridad</strong>. Nuestro objetivo es que las pymes y organizaciones modernicen su operación con tecnología confiable, rápida y segura. Implementamos soluciones escalables, medibles y orientadas a resultados.</p>
+        <h2 class="sec-title">Sobre Tech Surgical Solution</h2>
+        <p>Somos una <strong>consultora IT argentina</strong> con base en <strong>CABA y Gran Buenos Aires</strong>. Combinamos <em>diseño web profesional</em>, <em>desarrollo de software a medida</em> y <em>estrategias de ciberseguridad</em> para potenciar empresas con precisión quirúrgica. Ayudamos a pymes y organizaciones a optimizar procesos con tecnología de última generación y resultados medibles.</p>
       </div>
     </section>
 
     <section id="contacto" class="alt">
       <div class="container">
         <h2 class="sec-title">Contactanos</h2>
-        <p>Elegí la opción que te quede más cómoda:</p>
-
+        <p>Elegí la forma que prefieras:</p>
         <div class="cta-row" role="group" aria-label="Opciones de contacto">
-          <!-- WhatsApp directo -->
-          <a class="btn" href="https://wa.me/5491172366458" rel="noopener">💬 WhatsApp</a>
-
-          <!-- Gmail web con asunto y cuerpo -->
-          <a class="btn btn--ghost" href="https://mail.google.com/mail/?view=cm&fs=1&to=tss.it.ventas@gmail.com&su=Consulta%20desde%20la%20web%20TSS&body=Hola,%20quisiera%20consultar%20por%20..." target="_blank" rel="noopener">✉️ Abrir en Gmail</a>
-
-          <!-- Copiar email -->
+          <a class="btn" href="https://wa.me/5491172366458" rel="noopener" target="_blank">💬 WhatsApp</a>
+          <a class="btn btn--ghost" href="mailto:tss.it.ventas@gmail.com?subject=Consulta%20desde%20la%20web%20TSS" aria-label="Enviar correo">✉️ Email directo</a>
           <button class="btn btn--ghost" id="copyMailBtn" type="button" aria-label="Copiar correo">📋 Copiar email</button>
         </div>
-
-        <p class="mini" style="margin-top:1rem;">Correo: <b id="mailText">tss.it.ventas@gmail.com</b> · También respondemos por WhatsApp: <a href="https://wa.me/5491172366458">11 7236 6458</a></p>
+        <p class="mini" style="margin-top:1rem;">Correo: <b id="mailText">tss.it.ventas@gmail.com</b> · WhatsApp: <a href="https://wa.me/5491172366458">11 7236 6458</a></p>
       </div>
     </section>
   </main>
@@ -230,7 +217,7 @@
     <div class="container foot">
       <div>
         <div class="brand"><b>TSS</b></div>
-        <p class="mini">Tech Surgical Solution — Innovación, precisión y seguridad.</p>
+        <p class="mini">Tech Surgical Solution — Innovación, precisión y seguridad digital.</p>
       </div>
       <div>
         <h4>Enlaces</h4>
@@ -239,8 +226,8 @@
       <div>
         <h4>Seguinos</h4>
         <div class="social">
-          <a href="https://www.linkedin.com/in/tech-surgical-solution" aria-label="LinkedIn" rel="noopener" title="LinkedIn TSS">in</a>
-          <a href="https://www.instagram.com/tss.tech.it/" aria-label="Instagram" rel="noopener" title="Instagram TSS">ig</a>
+          <a href="https://www.linkedin.com/in/tech-surgical-solution" target="_blank" title="LinkedIn TSS">in</a>
+          <a href="https://www.instagram.com/tss.tech.it/" target="_blank" title="Instagram TSS">ig</a>
         </div>
       </div>
     </div>
@@ -249,34 +236,22 @@
     </div>
   </footer>
 
-  <!-- Toast -->
   <div id="toast" class="toast" role="status" aria-live="polite">Email copiado al portapapeles</div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Copiar correo al portapapeles con toast
-    const copyBtn = document.getElementById('copyMailBtn');
+    const btn = document.getElementById('copyMailBtn');
     const toast = document.getElementById('toast');
-    const emailToCopy = document.getElementById('mailText').textContent.trim();
-
-    copyBtn.addEventListener('click', async () => {
+    const email = document.getElementById('mailText').textContent.trim();
+    btn.addEventListener('click', async () => {
       try {
-        await navigator.clipboard.writeText(emailToCopy);
+        await navigator.clipboard.writeText(email);
         toast.classList.add('show');
-        setTimeout(()=> toast.classList.remove('show'), 1600);
-      } catch (e) {
-        // Fallback: seleccionar el texto si el navegador no permite clipboard API
-        const range = document.createRange();
-        range.selectNode(document.getElementById('mailText'));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
+        setTimeout(()=>toast.classList.remove('show'),1600);
+      } catch {
         toast.textContent = 'Seleccioná y copiá el email';
         toast.classList.add('show');
-        setTimeout(()=> {
-          toast.classList.remove('show');
-          toast.textContent = 'Email copiado al portapapeles';
-        }, 1800);
+        setTimeout(()=>{toast.classList.remove('show');toast.textContent='Email copiado al portapapeles'},1800);
       }
     });
   </script>

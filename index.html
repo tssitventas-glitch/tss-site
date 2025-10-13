@@ -3,9 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tech Surgical Solution (TSS)</title>
-  <meta name="description" content="Consultora IT especializada en diseño web, desarrollo de aplicaciones empresariales y ciberseguridad para pymes y organizaciones.">
+
+  <title>Tech Surgical Solution (TSS) · Consultora IT en CABA y GBA — Diseño Web, Desarrollo de Software y Ciberseguridad</title>
+  <meta name="description" content="Tech Surgical Solution (TSS): consultora IT en CABA y GBA. Diseño web, desarrollo de software a medida, automatización de procesos y ciberseguridad para pymes y organizaciones. Atención rápida y resultados medibles.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.tss-tech.it.com/">
+
+  <!-- SEO extra -->
+  <meta name="keywords" content="consultora IT, diseño web, desarrollo de software, automatización, ciberseguridad, consultoría informática, páginas web, aplicaciones empresariales, CABA, Buenos Aires, Argentina, TSS, Tech Surgical Solution">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tech Surgical Solution (TSS) · Consultora IT — Diseño Web, Software y Ciberseguridad">
+  <meta property="og:description" content="Consultora IT en CABA y GBA: diseño web, desarrollo de software, automatización y ciberseguridad para pymes.">
+  <meta property="og:url" content="https://www.tss-tech.it.com/">
+  <meta property="og:site_name" content="Tech Surgical Solution (TSS)">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon mínimo (SVG inline) -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23ffd400'/><text x='32' y='42' font-size='28' font-family='Arial' text-anchor='middle' fill='%23000'>T</text></svg>">
+
+  <!-- JSON-LD Organización -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tech Surgical Solution (TSS)",
+    "url": "https://www.tss-tech.it.com/",
+    "logo": "https://www.tss-tech.it.com/favicon.svg",
+    "sameAs": [
+      "https://www.instagram.com/tss.tech.it/",
+      "https://www.linkedin.com/in/tech-surgical-solution"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ciudad Autónoma de Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "contact@tss-tech.it.com",
+      "areaServed": "AR"
+    }]
+  }
+  </script>
+
   <style>
     :root{
       --bg:#0a0a0a;--bg-2:#151515;--text:#f2f2f2;--muted:#c9c9c9;--yellow:#ffd400;--yellow-600:#e2bd00;--black:#000;--radius:14px;--shadow:0 8px 28px rgba(0,0,0,.4);
@@ -46,16 +90,19 @@
     .social a{display:grid;place-items:center;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,.12)}
     .legal{border-top:1px solid rgba(255,255,255,.06);padding:12px 0;color:var(--muted);font-size:14px}
     @media(max-width:980px){.hero-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr;text-align:center}.case{grid-template-columns:1fr;}.case .meta{text-align:left}}
+    /* toast */
+    .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;border:1px solid rgba(255,255,255,.16);padding:.7rem 1rem;border-radius:10px;color:#f2f2f2;opacity:0;pointer-events:none;transition:.3s}
+    .toast.show{opacity:1;pointer-events:auto}
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#inicio">
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 6C18 6 8 16 8 29h48C56 16 46 6 32 6Z" fill="var(--yellow)"/><path d="M32 29v16a6 6 0 0 1-12 0" stroke="var(--yellow)" stroke-width="4" stroke-linecap="round"/></svg>
+      <a class="brand" href="#inicio" aria-label="Inicio Tech Surgical Solution">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo TSS"><path d="M32 6C18 6 8 16 8 29h48C56 16 46 6 32 6Z" fill="var(--yellow)"/><path d="M32 29v16a6 6 0 0 1-12 0" stroke="var(--yellow)" stroke-width="4" stroke-linecap="round"/></svg>
         <b>TSS</b>
       </a>
-      <nav><ul>
+      <nav aria-label="Principal"><ul>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#casos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -64,11 +111,12 @@
   </header>
 
   <main id="inicio">
+    <!-- H1 SEO con palabras clave -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1 class="headline">Protegemos y optimizamos tu tecnología con precisión quirúrgica.</h1>
-          <p class="sub">Diseño web, aplicaciones empresariales y ciberseguridad para pymes y organizaciones que buscan resultados medibles.</p>
+          <h1 class="headline">Consultora IT en CABA y GBA — Diseño Web, Desarrollo de Software y Ciberseguridad | Tech Surgical Solution (TSS)</h1>
+          <p class="sub">Optimizamos tu tecnología con precisión quirúrgica: sitios web rápidos, aplicaciones empresariales, automatización de procesos e infraestructura segura.</p>
           <div class="cta-row">
             <a class="btn" href="#servicios">Conocé nuestros servicios</a>
             <a class="btn btn--ghost" href="#contacto">Contactanos</a>
@@ -82,9 +130,18 @@
       <div class="container">
         <h2 class="sec-title">Servicios</h2>
         <div class="cards">
-          <div class="card"><h3>Diseño Web</h3><p>Sitios modernos, rápidos y seguros. Optimización SEO y performance.</p></div>
-          <div class="card"><h3>Aplicaciones Empresariales</h3><p>Automatización de procesos, paneles, integraciones y workflows a medida.</p></div>
-          <div class="card"><h3>Ciberseguridad</h3><p>Protección integral, hardening y auditorías de seguridad.</p></div>
+          <div class="card">
+            <h3>Diseño Web</h3>
+            <p>Sitios modernos, rápidos y seguros (SEO técnico, performance, accesibilidad). Implementación en hosting estático y dominios propios.</p>
+          </div>
+          <div class="card">
+            <h3>Aplicaciones Empresariales</h3>
+            <p>Automatización de procesos, paneles, integraciones, workflows a medida y soporte. Enfoque en pymes de CABA y Gran Buenos Aires.</p>
+          </div>
+          <div class="card">
+            <h3>Ciberseguridad</h3>
+            <p>Hardening, auditorías, pruebas de intrusión y planes de remediación. Cultura de seguridad aplicada al negocio.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -140,14 +197,31 @@
       </div>
     </section>
 
+    <!-- Bloque SEO con keywords naturales -->
+    <section class="alt" aria-labelledby="sobre-tss">
+      <div class="container">
+        <h2 id="sobre-tss" class="sec-title">Sobre Tech Surgical Solution (TSS)</h2>
+        <p>Somos una <strong>consultora IT</strong> con base en <strong>CABA y Gran Buenos Aires</strong>, enfocada en <strong>diseño web</strong>, <strong>desarrollo de software a medida</strong>, <strong>automatización de procesos</strong> y <strong>ciberseguridad</strong>. Nuestro objetivo es que las pymes y organizaciones modernicen su operación con tecnología confiable, rápida y segura. Implementamos soluciones escalables, medibles y orientadas a resultados.</p>
+      </div>
+    </section>
+
     <section id="contacto" class="alt">
       <div class="container">
         <h2 class="sec-title">Contactanos</h2>
-        <p>Podés escribirnos directamente por correo electrónico haciendo clic en el siguiente botón:</p>
-        <a class="btn" href="mailto:tss.it.ventas@gmail.com?subject=Consulta%20desde%20la%20web%20TSS&body=Hola%2C%20quisiera%20consultar%20por%20...">
-          Enviar correo
-        </a>
-        <p class="mini" style="margin-top:1rem;">También podés escribirnos manualmente a <b>tss.it.ventas@gmail.com</b> o por WhatsApp: <a href="https://wa.me/5491172366458">11 7236 6458</a></p>
+        <p>Elegí la opción que te quede más cómoda:</p>
+
+        <div class="cta-row" role="group" aria-label="Opciones de contacto">
+          <!-- WhatsApp directo -->
+          <a class="btn" href="https://wa.me/5491172366458" rel="noopener">💬 WhatsApp</a>
+
+          <!-- Gmail web con asunto y cuerpo -->
+          <a class="btn btn--ghost" href="https://mail.google.com/mail/?view=cm&fs=1&to=tss.it.ventas@gmail.com&su=Consulta%20desde%20la%20web%20TSS&body=Hola,%20quisiera%20consultar%20por%20..." target="_blank" rel="noopener">✉️ Abrir en Gmail</a>
+
+          <!-- Copiar email -->
+          <button class="btn btn--ghost" id="copyMailBtn" type="button" aria-label="Copiar correo">📋 Copiar email</button>
+        </div>
+
+        <p class="mini" style="margin-top:1rem;">Correo: <b id="mailText">tss.it.ventas@gmail.com</b> · También respondemos por WhatsApp: <a href="https://wa.me/5491172366458">11 7236 6458</a></p>
       </div>
     </section>
   </main>
@@ -165,9 +239,8 @@
       <div>
         <h4>Seguinos</h4>
         <div class="social">
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="Instagram">ig</a>
-          <a href="#" aria-label="X">x</a>
+          <a href="https://www.linkedin.com/in/tech-surgical-solution" aria-label="LinkedIn" rel="noopener" title="LinkedIn TSS">in</a>
+          <a href="https://www.instagram.com/tss.tech.it/" aria-label="Instagram" rel="noopener" title="Instagram TSS">ig</a>
         </div>
       </div>
     </div>
@@ -176,8 +249,36 @@
     </div>
   </footer>
 
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Email copiado al portapapeles</div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Copiar correo al portapapeles con toast
+    const copyBtn = document.getElementById('copyMailBtn');
+    const toast = document.getElementById('toast');
+    const emailToCopy = document.getElementById('mailText').textContent.trim();
+
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(emailToCopy);
+        toast.classList.add('show');
+        setTimeout(()=> toast.classList.remove('show'), 1600);
+      } catch (e) {
+        // Fallback: seleccionar el texto si el navegador no permite clipboard API
+        const range = document.createRange();
+        range.selectNode(document.getElementById('mailText'));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        toast.textContent = 'Seleccioná y copiá el email';
+        toast.classList.add('show');
+        setTimeout(()=> {
+          toast.classList.remove('show');
+          toast.textContent = 'Email copiado al portapapeles';
+        }, 1800);
+      }
+    });
   </script>
 </body>
 </html>
